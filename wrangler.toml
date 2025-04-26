@@ -1,0 +1,10 @@
+name = "sf6-memo"
+main = "workers/memo.js"
+account_id = "763a47af6a6b725d409035080552cd6f"
+workers_dev = true
+compatibility_date = "2025-04-26"
+
+# KV バインディング
+[[kv_namespaces]]
+binding = "MEMOS"
+id = "d6a805c4e24645afbdbc2d9154d5ef5a"

@@ -22,7 +22,7 @@
     </div>
   </main>
   <script>
-    const apiBase = 'https://<ワーカーのサブドメイン>/memo'; // あなたの Workers URL
+    const apiBase = 'https://sf6-memo.pages.dev/memo'; // あなたの Workers URL
     const params = new URLSearchParams(location.search);
     const name = params.get('name') || 'Unknown';
     document.getElementById('char-name').textContent = name;
@@ -50,7 +50,10 @@
     });
 
     // 他キャラリンク生成
-    const otherChars = ['Akuma','Blanka','Chun Li','Dhalsim','Dee Jay','Ed','A.K.I.','E Honda','Elena','Guile','JP','Jamie','Juri','Ken','Kimberly','Cammy','Mai','Manon','Marisa','Rashid','Lily','Luke','Ryu','Terry','Zangief'];
+    const otherChars = ['A.K.I.','Ed','Elena','Guile','Cammy','Kimberly','Ken','Gouki','Zangief',
+      'Jamie','JP','Juri','Dhalsim','ChunLi','DeeJay','Terry','Blanka','Vega',
+      'EHonda','Mai','Manon','Marisa','Rashid','Ryu','Lily','Luke'
+    ];
     const container = document.getElementById('other-chars');
     otherChars.forEach(ch => {
       if (ch === name) return;
