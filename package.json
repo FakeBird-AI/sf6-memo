@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "name": "memo-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/FakeBird-AI/sf6-memo.git",
+  "author": "moyaki <moyaki397@gmail.com>",
+  "license": "MIT"
+}
