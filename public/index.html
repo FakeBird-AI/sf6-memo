@@ -1,12 +1,12 @@
-<!-- index.html -->
+<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SF6 対策メモサイト</title>
-  <!-- CDN 削除: ビルド済みCSSを読み込む -->
-  <link href="output.css" rel="stylesheet">
+  <!-- CDN 削除 → ビルド済みCSSを読み込む -->
+  <link href="/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900">
   <header class="bg-blue-600 text-white p-4 shadow-md">
@@ -32,20 +32,11 @@
       img.src = `images/${ch.toLowerCase().replace(/\s+/g,'-').replace(/\./g,'').replace(/&/g,'')}.jpg`;
       img.alt = ch;
       img.className = 'w-full h-40 object-cover';
-      const div = document.createElement('div');
-      div.className = 'p-4';
-      const h2 = document.createElement('h2');
-      h2.className = 'text-xl font-semibold mb-2';
-      h2.textContent = ch;
-      const p = document.createElement('p');
-      p.className = 'text-gray-700 mb-3';
-      p.textContent = '対策ポイントを追加';
-      const span = document.createElement('span');
-      span.className = 'text-blue-600 hover:underline';
-      span.textContent = '詳細を見る';
-      div.append(h2, p, span);
-      a.prepend(img);
-      a.append(div);
+      const div = document.createElement('div'); div.className = 'p-4';
+      const h2 = document.createElement('h2'); h2.className = 'text-xl font-semibold mb-2'; h2.textContent = ch;
+      const p  = document.createElement('p');  p.className = 'text-gray-700 mb-3'; p.textContent = '対策ポイントを追加';
+      div.append(h2, p);
+      a.append(img, div);
       card.append(a);
       container.append(card);
     });
