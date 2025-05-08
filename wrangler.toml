@@ -1,17 +1,17 @@
 # wrangler.toml
-name = "sf6-memo"
-main = "src/index.ts"
-account_id = "763a47af6a6b725d409035080552cd6f"
-compatibility_date = "2025-05-09"
-workers_dev = false
-
-# Pages ドメインにマウント
-route = "sf6-memo-site.pages.dev/api/*"
+name               = "sf6-memo"
+account_id         = "763a47af6a6b725d409035080552cd6f"
+compatibility_date = "2025-05-08"
+workers_dev        = false
 
 kv_namespaces = [
   { binding = "MEMOS", id = "d6a805c4e24645afbdbc2d9154d5ef5a" }
 ]
 
+# 静的ファイル置き場を指定
 [site]
 bucket = "./dist"
-entry-point = "workers-site"
+
+# Worker エントリポイント
+# ここを静的配信ではなくAPI用スクリプトに向ける
+main = "src/index.ts"
