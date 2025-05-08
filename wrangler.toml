@@ -1,5 +1,5 @@
 name = "sf6-memo-api"
-type = "javascript"
+main = "src/index.ts"
 account_id = "763a47af6a6b725d409035080552cd6f"
 workers_dev = true
 compatibility_date = "2025-05-08"

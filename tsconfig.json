@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "jsx": "react-jsx",           // React 17+ の JSX トランスフォーム
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "types": ["vite/client", "node"]      // 必要に応じて ["react","react-dom"] を追加
+    },
+    "include": ["src"]
+  }
+  
