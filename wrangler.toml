@@ -1,8 +1,12 @@
+# wrangler.toml
 name = "sf6-memo-api"
 main = "src/index.ts"
 account_id = "763a47af6a6b725d409035080552cd6f"
-workers_dev = true
-compatibility_date = "2025-05-08"
+compatibility_date = "2025-05-09"
+workers_dev = false
+
+# Pages ドメインにマウント
+route = "sf6-memo-site.pages.dev/api/*"
 
 kv_namespaces = [
   { binding = "MEMOS", id = "d6a805c4e24645afbdbc2d9154d5ef5a" }
