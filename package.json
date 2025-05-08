@@ -2,6 +2,7 @@
   "name": "memo-site",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "npm@10.8.3",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
