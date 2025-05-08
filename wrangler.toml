@@ -1,14 +1,9 @@
-# wrangler.toml
-
-name = "sf6-memo"
-main = "workers/memo.js"
+name = "sf6-memo-api"
+type = "javascript"
 account_id = "763a47af6a6b725d409035080552cd6f"
 workers_dev = true
-compatibility_date = "2025-04-26"
+compatibility_date = "2025-05-08"
 
-# Pages ドメイン上 /memo* をこの Worker がハンドル
-routes = ["sf6-memo.pages.dev/memo*"]
-
-[[kv_namespaces]]
-binding = "MEMOS"
-id = "d6a805c4e24645afbdbc2d9154d5ef5a"
+kv_namespaces = [
+  { binding = "MEMOS", id = "d6a805c4e24645afbdbc2d9154d5ef5a" }
+]
