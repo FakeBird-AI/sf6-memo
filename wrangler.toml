@@ -1,5 +1,5 @@
 # wrangler.toml
-name = "sf6-memo-api"
+name = "sf6-memo"
 main = "src/index.ts"
 account_id = "763a47af6a6b725d409035080552cd6f"
 compatibility_date = "2025-05-09"
